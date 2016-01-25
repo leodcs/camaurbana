@@ -1,0 +1,40 @@
+<%= form_for @user do |f| %>
+<% if @user.errors.any? %>
+	<div id="error_explanation">
+		<%= t 'general.form_error' %>
+	</div>
+<% end %>
+<p>
+<%= t 'activerecord.attributes.user.full_name' %> <br>
+<%= f.text_field :full_name %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= t 'activerecord.attributes.user.location'%> <br>
+<%= f.text_field :location %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= t 'activerecord.attributes.user.email' %> <br>
+<%= f.text_field :email %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= t 'activerecord.attributes.user.password' %><br>
+<%= f.password_field :password %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= t 'activerecord.attributes.user.password_confirmation' %><br>
+<%= f.password_field :password_confirmation %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= t 'activerecord.attributes.user.bio'%> <br>
+<%= f.text_area :bio %>
+<%= error_tag @user, :full_name %>
+</p>
+<p>
+<%= f.submit 'Confirmar' %><br>
+</p>
+<% end %>

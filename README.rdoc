@@ -1,0 +1,1 @@
+a.attributes.each{|item| item['password'] = "replaced" if item['password']==nil}
