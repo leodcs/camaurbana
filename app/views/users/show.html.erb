@@ -5,6 +5,7 @@
 	<li><%= t '.location', location: @user.location %></li>
 	<li><%= t '.bio', bio: @user.bio %></li>
 </ul>
-
-<%= link_to t('.edit'), edit_user_path(@user) %>
+<% if params[:id].to_i == current_user.id %>
+	<%= link_to t('.edit'), edit_user_path(@user) %>
+<% end %>
 </article>
