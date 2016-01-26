@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+	self.primary_key = 'id'
 	EMAIL_REGEXP = /\A[^@]+@([^@\.]+\.)+[^@\.]+\z/
 	has_many :rooms, dependent: :destroy
 	has_many :reviews, dependent: :destroy

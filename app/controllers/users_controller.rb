@@ -2,12 +2,6 @@ class UsersController < ApplicationController
 	before_action :can_change, only: [:edit, :update]
 	before_action :require_no_authentication, only: [:new, :create]
 	
- 	private	def user_params
-		params.
-		require(:user).
-		permit(:email, :full_name, :location, :password, :password_confirmation, :bio)		
-	end
-
  	def show 
 		@user=User.find(params[:id])
 	end
@@ -61,5 +55,9 @@ private
 		@user ||= User.find(params[:id])
 	end
 
-
+	def user_params
+		params.
+		require(:user).
+		permit(:email, :full_name, :location, :password, :password_confirmation, :bio)		
+	end
 end

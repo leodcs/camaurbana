@@ -143,6 +143,7 @@ GEM
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     rmagick (2.15.4)
+    rubygems-update (2.5.1)
     sass (3.2.19)
     sass-rails (4.0.5)
       railties (>= 4.0.0, < 5.0)
@@ -195,6 +196,7 @@ DEPENDENCIES
   rails (= 4.1.8)
   rails_12factor
   rmagick
+  rubygems-update (~> 2.5, >= 2.5.1)
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   turbolinks
