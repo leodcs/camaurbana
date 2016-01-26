@@ -5,7 +5,7 @@ gem 'rails_12factor'
 gem  'kaminari'
 gem 'friendly_id', '5.0.3'
 gem 'carrierwave', '0.10.0'
-gem 'rmagick', :require => 'RMagick'
+gem 'rmagick'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
 # Use sqlite3 as the database for Active Record
